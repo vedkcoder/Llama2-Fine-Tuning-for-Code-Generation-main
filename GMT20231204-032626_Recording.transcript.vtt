@@ -1,0 +1,146 @@
+WEBVTT
+
+1
+00:00:01.410 --> 00:00:10.920
+Ved Kokane: Good day, everyone. My name is vaith copper, and this is a very short demo for my project. La find Tuning llama, 2 for language to code generation
+
+2
+00:00:11.350 --> 00:00:32.150
+Ved Kokane: before I begin with the demo, let me just quickly go over my inspiration for this project. So we know that there are a lot of large language models out there, which are very good in general purposes, such as Chat, GPT. But as throughout my
+
+3
+00:00:32.330 --> 00:00:43.839
+Ved Kokane: time as a data science student, I have noticed that Chat GP. Isn't very good with providing specific code snippets. for data science problems
+
+4
+00:00:44.330 --> 00:00:56.110
+Ved Kokane: it a lot of times. It doesn't understand the problem itself and gives out awareness codes, mainly because of version mismatches and a lot of issues.
+
+5
+00:00:56.440 --> 00:01:03.439
+Ved Kokane: So that's why I've decided to fine tune a la large language model llama, 2 by Meta AI
+
+6
+00:01:04.010 --> 00:01:14.290
+Ved Kokane: to specifically work for Python, R. Numpy pandas and and specific data science problems such as like such as that.
+
+7
+00:01:14.910 --> 00:01:22.009
+Ved Kokane:  So let let let me go over my project. So I have.
+
+8
+00:01:22.310 --> 00:01:29.929
+Ved Kokane: I have fine-tuned the llama, 2 model on my local machine, using a technique called PE. Fd.
+
+9
+00:01:30.140 --> 00:01:35.600
+Ved Kokane: Which allowed me to fine tune the 7 billion model on my local machine.
+
+10
+00:01:35.880 --> 00:01:40.350
+Ved Kokane: For the front end, for the application I am using. Flask
+
+11
+00:01:40.410 --> 00:01:52.870
+Ved Kokane: flask is a very good micro Api, which which is used for making web applications in python, and it also helps to integrate machine learning models efficiently as well.
+
+12
+00:01:53.170 --> 00:01:57.110
+Ved Kokane: So this is the app dot ui, and let me just
+
+13
+00:01:57.300 --> 00:01:58.800
+Ved Kokane: run the file.
+
+14
+00:02:01.910 --> 00:02:10.909
+Ved Kokane: Now, this application is currently working on my local machine. But I have plan. I have intentions of
+
+15
+00:02:11.220 --> 00:02:15.589
+Ved Kokane: moving this to a cloud, so everyone can run this and test this on their own.
+
+16
+00:02:15.910 --> 00:02:34.680
+Ved Kokane: So this is the landing page of very basic landing page for my application. So I have named it Code Buddy, the language to Code AI. There's a drop down menu where you can access different options. Let me just go over the options right now. So this is the home button which returns you to this landing page.
+
+17
+00:02:34.730 --> 00:02:37.869
+Ved Kokane: I have another option which is for sample data.
+
+18
+00:02:37.990 --> 00:02:46.519
+Ved Kokane: So this is where I have listed out 2,000 of 2,000 curated samples where you can check what kind of
+
+19
+00:02:46.580 --> 00:03:01.449
+Ved Kokane: input you can give to the model. And what kind of output you can expect from the model? When I when I was training my data set, I had around 500,000 rows of data, and I have curated at 2,000
+
+20
+00:03:01.490 --> 00:03:04.660
+Ved Kokane: from these, which are the most accurate responses.
+
+21
+00:03:04.720 --> 00:03:32.350
+Ved Kokane: So you can go and check different kinds of responses. The this page is incomplete. Right now, I'm going to be adding a functionality to filter out the different issue. Different types of problems, such as python or pandas. So you can select the option and filter out this specific sample so you can check samples for a specific time type of problem. So next is the code section. This is the main functionality of my project.
+
+22
+00:03:32.600 --> 00:03:41.269
+Ved Kokane: So this is where you're actually going to leverage. The model to get a quote is, convert your text to specific code.
+
+23
+00:03:41.300 --> 00:03:51.530
+Ved Kokane: I have made a bar where you can select what kind of problem you're dealing with. So let's say, I just have to have a regular pipe and problem.
+
+24
+00:03:51.620 --> 00:03:56.559
+Ved Kokane: So I would just give it an input code for slicing.
+
+25
+00:03:56.890 --> 00:03:58.599
+Ved Kokane: Let's let's say.
+
+26
+00:03:59.060 --> 00:04:04.809
+Ved Kokane: and you would press the coded button, and then the model would run in the background and give you a quote.
+
+27
+00:04:04.940 --> 00:04:08.259
+Ved Kokane: for now I haven't connected the model
+
+28
+00:04:08.460 --> 00:04:19.519
+Ved Kokane: With this project. Yet, since the model takes a lot of time to train, the model isn't completely trained yet I am. I am still working on tuning the hyper parameters.
+
+29
+00:04:19.870 --> 00:04:31.300
+Ved Kokane:  once the model is tuned correctly. I would integrate with this with the front end, for now I am just showing selection and the input that I'm giving
+
+30
+00:04:31.380 --> 00:04:32.409
+Ved Kokane: as output.
+
+31
+00:04:32.910 --> 00:04:37.989
+Ved Kokane: So this page is also not incomplete is not complete.
+
+32
+00:04:38.000 --> 00:04:42.710
+Ved Kokane: I would be adding a copy code button on the top
+
+33
+00:04:43.160 --> 00:04:44.490
+Ved Kokane: and
+
+34
+00:04:45.440 --> 00:04:49.799
+Ved Kokane: this is the main functionality that I wanted to show.
+
+35
+00:04:50.720 --> 00:05:05.599
+Ved Kokane: I have the sharded version of the model ready with me once this trained. I've been integrating. And also, I am planning to improve this ui. So it's more user, friendly. And it has all the functionalities that I mentioned before.
+
+36
+00:05:05.920 --> 00:05:09.500
+Ved Kokane: That is it for my for the demo. Thank you so much.
+

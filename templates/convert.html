@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Buddy</title>
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/convert.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav id="navbar">
+            <a href="main.html">Home</a>
+            <a href="data.html">Sample Data</a>
+            <a href="">Code It!</a>
+        </nav>
+
+        <div class="dropdown">
+            <!-- <form action="/convert.html" method="post" id="dropdownid"> 
+                <button class="dropbtn" name="dropdown">Select Task Type</button>
+                <div class="dropdown-content">
+                    <a href="#">Python</a>
+                    <a href="#">R</a>
+                    <a href="#">SQL</a>
+                    <a href="#">NumPy</a>
+                    <a href="#">Pandas</a>
+                    <a href="#">NLP</a>
+                </div>
+            </form> -->
+            <form id="dropdownform" onsubmit="submitForm(); return false;" method="post">
+            
+                <label for="dropdown">Select an option:</label>
+                <select id="dropdown" name="selected_option">
+                    <option value="Python">Python</option>
+                    <option value="R">R</option>
+                    <option value="SQL">SQL</option>
+                    <option value="Pandas">Pandas</option>
+                    <option value="NumPy">NumPy</option>
+                    <!-- Add more options as needed -->
+                </select>
+            
+                <button class="codeItButton" type="submit">Code It!</button>
+            </form>
+        </div>
+
+        <main>
+
+            <div class="converter-container">
+                <!-- Text Entry Box (Left Side) -->
+                <div class="text-entry-box">
+                    <form action="/convert.html" method="post" id="input_text">
+                        <label for="inputText">Input Text</label>
+                        <textarea id="inputText" name="input_text" rows="10" cols="50"></textarea>
+                    </form>
+                </div>
+        
+                <!-- Text Output Box (Right Side) -->
+                <div class="text-output-box">
+                    <label for="outputText">Code</label>
+                    <textarea id="outputText" rows="10" cols="50" readonly>{{ result }}</textarea>
+                </div>
+            </div>
+    
+        </main>
+
+        <div class="created-by">Created by Ved Kokane</div>
+    </div>
+
+    <script src="static/js/main.js"></script>
+
+</body>

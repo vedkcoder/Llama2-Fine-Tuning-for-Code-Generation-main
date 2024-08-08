@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Buddy</title>
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/main.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav id="navbar">
+            <a href="main.html">Home</a>
+            <a href="data.html">Sample Data</a>
+            <a href="convert.html">Code It!</a>
+        </nav>
+
+        <main>
+            <h1>Code Buddy</h1>
+            <p class="description">The language to code AI</p>
+
+            <div class="button-container">
+                <button class="get-started-btn" onclick="startTransition()">Get Started</button>
+                <div id="loading" class="loading"></div>
+            </div>
+
+        </main>
+
+        <div class="created-by">Created by Ved Kokane</div>
+    </div>
+
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>

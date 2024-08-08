@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Buddy</title>
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/data.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav id="navbar">
+            <a href="main.html">Home</a>
+            <a href="">Sample Data</a>
+            <a href="convert.html">Code It!</a>
+        </nav>
+
+        <main>
+            <h2>Check sample responses</h2>
+    
+            <!-- Display data in two text boxes (side by side) -->
+            <div class="converter-container">
+                <!-- Text Entry Box (Left Side) -->
+                <div class="text-entry-box">
+                    <label for="intentText">Intent:</label>
+                    <textarea id="intentText" rows="5" cols="30" readonly></textarea>
+                </div>
+    
+                <!-- Text Output Box (Right Side) -->
+                <div class="text-output-box">
+                    <label for="snippetText">Snippet:</label>
+                    <textarea id="snippetText" rows="5" cols="30" readonly></textarea>
+                </div>
+            </div>
+
+            <script>
+                var jsonData = {{data|tojson|safe}};
+            </script>
+
+            <!-- Navigation Controls -->
+            <div class="navigation-controls">
+            <button onclick="prevRow()">Previous</button>
+            <span id="currentRow">1</span>/<span id="totalRows"></span>
+            <button onclick="nextRow()">Next</button>
+            </div>
+    
+            <!-- Your content for data.html goes here -->
+        </main>
+    
+        <!-- Created by Ved Kokane text -->
+        <div class="created-by">Created by Ved Kokane</div>
+
+        <script src="static/js/main.js"></script>
+
+
+</body>
